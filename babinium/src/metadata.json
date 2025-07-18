@@ -1,6 +1,0 @@
-{
-  "name": "Babinium",
-  "description": "Una aplicación web inteligente que utiliza IA para analizar una imagen de una tabla y convertirla en una hoja de cálculo estructurada y descargable (CSV).",
-  "requestFramePermissions": [],
-  "pwa": true
-}
