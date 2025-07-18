@@ -57,7 +57,12 @@ export const extractTableFromImage = async (imageFile: File): Promise<TableData>
       },
     });
 
-    let jsonText = response.text.trim();
+    const text = response.text;
+    if (!text) {
+        throw new Error("Se recibió una respuesta vacía o indefinida de la IA. Es posible que la imagen no contenga una tabla reconocible.");
+    }
+
+    let jsonText = text.trim();
     if (jsonText.startsWith('```') && jsonText.endsWith('```')) {
         jsonText = jsonText.replace(/^```(json)?\s*|```\s*$/g, '').trim();
     }

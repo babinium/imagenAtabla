@@ -1,4 +1,4 @@
-export const enum AppState {
+export enum AppState {
   IDLE,
   PREVIEW,
   PROCESSING,
