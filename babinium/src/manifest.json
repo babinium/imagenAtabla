@@ -1,0 +1,16 @@
+{
+  "short_name": "Babinium",
+  "name": "Babinium - IA de Imagen a Hoja de Cálculo",
+  "description": "Una aplicación web inteligente que utiliza IA para analizar una imagen de una tabla y convertirla en una hoja de cálculo estructurada y descargable (CSV).",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#4f46e5",
+  "background_color": "#f8fafc"
+}
