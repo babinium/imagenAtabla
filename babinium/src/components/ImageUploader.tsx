@@ -1,4 +1,5 @@
-import React, { useState, useCallback, DragEvent, ClipboardEvent, ChangeEvent } from 'react';
+import React, { useState, useCallback } from 'react';
+import type { DragEvent, ClipboardEvent, ChangeEvent } from 'react';
 import { UploadCloud } from 'lucide-react';
 
 interface ImageUploaderProps {

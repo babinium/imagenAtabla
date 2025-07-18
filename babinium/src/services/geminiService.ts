@@ -1,5 +1,6 @@
-import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
-import { TableData } from '../types';
+import { GoogleGenAI } from "@google/genai";
+import type { GenerateContentResponse } from "@google/genai";
+import type { TableData } from '../types';
 
 const apiKey = import.meta.env.VITE_API_KEY;
 

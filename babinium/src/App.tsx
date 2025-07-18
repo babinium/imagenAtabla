@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { AppState, TableData } from './types';
+import type { AppState, TableData } from './types';
 import { extractTableFromImage } from './services/geminiService';
 import ImageUploader from './components/ImageUploader';
 import DataTable from './components/DataTable';
