@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
-import { AppState } from './types';
-import type { TableData } from './types';
+import { AppState as AppStateValues } from './types';
+import type { TableData, AppState } from './types';
 import { extractTableFromImage } from './services/geminiService';
 import ImageUploader from './components/ImageUploader';
 import DataTable from './components/DataTable';
@@ -8,7 +8,7 @@ import Spinner from './components/Spinner';
 import { FileScan, AlertTriangle, ArrowLeft, Download } from 'lucide-react';
 
 const App: React.FC = () => {
-  const [appState, setAppState] = useState<AppState>(AppState.IDLE);
+  const [appState, setAppState] = useState<AppStateType>(AppState.IDLE);
   const [imageFile, setImageFile] = useState<File | null>(null);
   const [imageUrl, setImageUrl] = useState<string>('');
   const [tableData, setTableData] = useState<TableData | null>(null);
